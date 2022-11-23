@@ -20,8 +20,8 @@ THIS_DIR: str = os.path.dirname(os.path.abspath(__file__))
 server.config.from_pyfile(os.path.join(THIS_DIR, "config.py"))
 
 TOKEN: str = server.config["TOKEN"]
-bot = TeleBot(TOKEN)
-rdb = redis.from_url(server.config["REDIS_URL"])
+bot = TeleBot("5909208902:AAFFsZQJqVIKESmxLhckbHGRrUUJZAqlWbk")
+rdb = redis.from_url(server.config["redis-cli -u redis://default:vg1NWwUCEFdCdX0gI7zqzenlEoixwiW9@redis-19916.c81.us-east-1-2.ec2.cloud.redislabs.com:19916"])
 
 SUPPORT_MESSAGE: str = """
 [💵 Donate via Stripe](https://donate.stripe.com/28o6s280ReHU3V6fYY)
